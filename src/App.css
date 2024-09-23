@@ -1,8 +1,13 @@
-/* CSS Reset */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 /* Basic styles */
@@ -42,3 +47,4 @@ button {
   margin: 0 auto;
   padding: 0 20px;
 }
+
