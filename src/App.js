@@ -1,11 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
+import Home from './sections/Home';
 
 function App() {
   return (
-    <div className="App">
-      hii
-    </div>
+    <>
+    <Home/>
+    </>
   );
 }
 
