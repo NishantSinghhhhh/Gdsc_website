@@ -18,7 +18,7 @@ const Footer = () => {
             </div>
 
             <div className='text-[20px] font-medium mt-[10px] mb-[20px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</div> 
-            <div className='text-xl flex space-x-4'>
+            <div className='text-xl flex space-x-6'>
                 <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
                     <FaInstagram className='text-[#E1306C] text-2xl w-[40px] h-[40px]' /> {/* Instagram color */}
                 </a>
@@ -45,7 +45,7 @@ const Footer = () => {
 
             </div>
             <div>
-                <ul className="list-disc mt-[15px] flex flex-col gap-[15px] pl-5 ml-[25px] text-xl font-semibold">
+                <ul className="list-disc mt-[15px] flex flex-col gap-[15px] pl-5 ml-[25px] text-xl font-medium">
                     <li>Home</li>
                     <li>About</li>
                     <li>Events</li>
@@ -61,7 +61,7 @@ const Footer = () => {
 
             </div>
             <div>
-                <ul className="list-disc mt-[15px] flex flex-col gap-[15px] pl-5 ml-[25px] text-xl font-bold">
+                <ul className="list-disc mt-[15px] flex flex-col gap-[15px] pl-5 ml-[25px] text-xl font-medium">
                     <li>Privacy</li>
                     <li>Terms & Conditions</li>
                     <li>Upcoming Events</li>
@@ -77,28 +77,29 @@ const Footer = () => {
 
             </div>
             <div>
-            <div className="p-4 rounded-lg ">
-      <ul className="space-y-4">
-        <li className="flex items-center">
-          <div className="bg-blue-500 rounded-full p-2 mr-3">
-            <IoLocationOutline className="text-white text-xl" />
-          </div>
-          <span className="text-lg">AIT Pune</span>
-        </li>
-        <li className="flex items-center">
-          <div className="bg-yellow-500 rounded-full p-2 mr-3">
-            <IoCallOutline className="text-white text-xl" />
-          </div>
-          <span className="text-lg">+91 9876543210</span>
-        </li>
-        <li className="flex items-center">
-          <div className="bg-green-500 rounded-full p-2 mr-3">
-            <IoMailOutline className="text-white text-xl" />
-          </div>
-          <span className="text-lg">Email</span>
-        </li>
-      </ul>
-    </div>
+            <div className="p-8 rounded-lg "> {/* Increased padding */}
+                <ul className="space-y-6"> {/* Increased space between items */}
+                    <li className="flex items-center">
+                    <div className="bg-blue-500 rounded-full p-3 mr-4"> {/* Increased padding for the icon */}
+                        <IoLocationOutline className="text-white text-2xl" /> {/* Increased icon size */}
+                    </div>
+                    <span className="text-xl">AIT Pune</span> {/* Increased font size */}
+                    </li>
+                    <li className="flex items-center">
+                    <div className="bg-yellow-500 rounded-full p-3 mr-4"> {/* Increased padding for the icon */}
+                        <IoCallOutline className="text-white text-2xl" /> {/* Increased icon size */}
+                    </div>
+                    <span className="text-xl">+91 9876543210</span> {/* Increased font size */}
+                    </li>
+                    <li className="flex items-center">
+                    <div className="bg-green-500 rounded-full p-3 mr-4"> {/* Increased padding for the icon */}
+                        <IoMailOutline className="text-white text-2xl" /> {/* Increased icon size */}
+                    </div>
+                    <span className="text-xl">Email</span> {/* Increased font size */}
+                    </li>
+                </ul>
+                </div>
+
             </div>
         </div>
         
