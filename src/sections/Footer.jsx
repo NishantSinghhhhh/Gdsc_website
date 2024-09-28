@@ -2,11 +2,13 @@ import React from 'react';
 import { ReactComponent as Hero1 } from '../Assets/Footer/hero-section 1.svg';
 import {ReactComponent as Logo} from '../Assets/Footer/gdsc.svg'
 import { FaInstagram, FaFacebook, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { IoLocationOutline, IoCallOutline, IoMailOutline } from 'react-icons/io5';
+
 const Footer = () => {
   return (
-    <div className='bg-black h-[75vh] md:h-[95vh] p-[2.3rem] w-[99vw] '>
+    <div className='bg-black h-[100vh] md:h-[105vh] p-[2.3rem] w-[99vw] '>
       <div className='bg-[#E6E4D5] h-[60vh] rounded-[2rem] flex p-[3rem] '>
-        <div className='w-[30%] flex flex-col gap-[25px]'>
+        <div className='w-[30%] flex flex-col gap-[25px] '>
             <div className='flex items-center'>
                 <Logo className='w-[60px] h-[60px]' /> 
                 <div className='flex flex-col ml-[10px] '>
@@ -34,30 +36,73 @@ const Footer = () => {
             </div>
 
 
-            <div className='flex w-[70%] bg-blue-400n '>
-                <div className=' flex flex-col gap-[40px]'>
-                    <div className='text-[40px] text-black font-bold'>Explore</div>
-                    
-                    <div cla>
-                    <ul className="list-disc flex flex-col gap-[10px] pl-5  ml-[25px] text-xl">
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Events</li>
-                        <li>Team</li>
-                    </ul>
-                </div>
+            <div className='flex w-[70%] flex gap-[5rem] ml-[60px]'>
+            <div className='flex w-[27%] flex-col gap-[15px]'>
+            <div className='text-[40px] text-black font-bold'>Explore</div>
+            <div className='flex flex-row justify-between'>
+                <div className='w-[20%] mx-auto h-[2px] bg-gradient-to-r from-pink-500 to-red-500 mr-[5px]' /> 
+                <div className='w-[80%] mx-auto h-[2px] bg-gradient-to-r from-pink-500 to-red-500' /> 
 
-                </div>
+            </div>
+            <div>
+                <ul className="list-disc mt-[15px] flex flex-col gap-[15px] pl-5 ml-[25px] text-xl font-semibold">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Events</li>
+                    <li>Team</li>
+                </ul>
+            </div>
+        </div>
+            <div className='flex w-[27%] flex-col gap-[15px]'>
+            <div className='text-[40px] text-black font-semibold'>Quick Links</div>
+            <div className='flex flex-row justify-between'>
+                <div className='w-[20%] mx-auto h-[2px] bg-gradient-to-r from-blue-500 to-blue-800 mr-[5px]' /> 
+                <div className='w-[80%] mx-auto h-[2px] bg-gradient-to-r from-blue-500 to-blue-800' /> 
 
-                <div>
-                    <div>2nd</div>
-                    <div>2nd Column</div>
-                </div>
+            </div>
+            <div>
+                <ul className="list-disc mt-[15px] flex flex-col gap-[15px] pl-5 ml-[25px] text-xl font-bold">
+                    <li>Privacy</li>
+                    <li>Terms & Conditions</li>
+                    <li>Upcoming Events</li>
+                    <li>GDSC Chapter</li>
+                </ul>
+            </div>
+        </div>
+            <div className='flex w-[27%] flex-col gap-[15px]'>
+            <div className='text-[40px] text-black font-bold'>Get in Touch</div>
+            <div className='flex flex-row justify-between'>
+                <div className='w-[20%] mx-auto h-[2px] bg-gradient-to-r from-green-500 to-green-800 mr-[5px]' /> 
+                <div className='w-[80%] mx-auto h-[2px] bg-gradient-to-r from-green-500 to-green-800' /> 
 
-                <div>
-                    <div>3rd </div>
-                    <div>3rd COlumn</div>
-                </div>
+            </div>
+            <div>
+            <div className="p-4 rounded-lg ">
+      <ul className="space-y-4">
+        <li className="flex items-center">
+          <div className="bg-blue-500 rounded-full p-2 mr-3">
+            <IoLocationOutline className="text-white text-xl" />
+          </div>
+          <span className="text-lg">AIT Pune</span>
+        </li>
+        <li className="flex items-center">
+          <div className="bg-yellow-500 rounded-full p-2 mr-3">
+            <IoCallOutline className="text-white text-xl" />
+          </div>
+          <span className="text-lg">+91 9876543210</span>
+        </li>
+        <li className="flex items-center">
+          <div className="bg-green-500 rounded-full p-2 mr-3">
+            <IoMailOutline className="text-white text-xl" />
+          </div>
+          <span className="text-lg">Email</span>
+        </li>
+      </ul>
+    </div>
+            </div>
+        </div>
+        
+            
                 
             </div>
       </div>
