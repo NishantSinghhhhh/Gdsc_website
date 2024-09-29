@@ -5,6 +5,8 @@ import GdscLogo from '../Assets/Footer/gdsclogo.png'; // Import PNG image
 const TeamCard = () => {
   return (
     <>
+    <div>
+
       <div className='border absolute border-black h-[20rem] w-[20rem]'>
         <div>
           <div className='border-b border-black bg-[#E5E5E5] h-[2rem] w-full flex items-center gap-[20px] px-2'>
@@ -32,8 +34,11 @@ const TeamCard = () => {
             <br/>
             I’m Arshia Thakur Garg
           </div>
-          <div className='flex justify-end items-center w-full pr-[10px] gap-[5px]'>
-            <img src={GdscLogo} alt="GDSC Logo" className="h-[1rem] w-[2rem]" /> 
+          <div className='flex justify-end items-center w-[100%] pr-[10px] gap-[5px]'>
+            <div>
+            <img src={GdscLogo} alt="GDSC Logo" className="h-[30px] w-[20%]" /> 
+
+            </div>
             <div className='text-right'>
               <h4 className='text-[10px]'>Google Developer Student Clubs</h4> 
               <h5 className='text-[8px]'>Army Institute of Technology, Pune</h5> 
@@ -41,6 +46,7 @@ const TeamCard = () => {
           </div>
         </div>
       </div>
+    </div>
     </>
   );
 };
