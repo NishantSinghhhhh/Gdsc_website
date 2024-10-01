@@ -1,4 +1,5 @@
 import './App.css';
+import About from './sections/About';
 import Collaborate from './sections/Collaborate';
 import Events from './sections/Events';
 import Footer from './sections/Footer';
@@ -9,6 +10,7 @@ function App() {
   return (
     <>
     <Home/>
+    <About/>
     <Events/>
     <Team/>
     <Collaborate/>

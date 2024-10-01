@@ -145,11 +145,14 @@ const TypingEffect = () => {
 
 const Home = () => {
   return (
-    <section className="relative min-h-screen bg-[#E6E4D5] text-black" class="svg-background">
+    <div
+      className="bg-black p-4 sm:p-6 w-full"
+    >
+    <section className="relative min-h-screen bg-[#E6E4D5] rounded-[2rem] pb-4 px-4 sm:pb-8 sm:px-8 overflow-hidden text-black" class="svg-background">
       {/* Navbar */}
       <div className="flex p-0 justify-between items-center w-[100%]">
         {/* Logo Section with Beige Background */}
-        <div className="bg-beige py-4 w-[20%] flex justify-center items-center pr-28">
+        <div className="bg-beige pb-4 w-[20%] flex justify-center  items-center pr-28">
           <div className="w-12 h-10">
             <svg width="113" height="62" viewBox="0 0 113 62" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M81.3573 33.3811C87.3027 29.567 93.2321 25.7217 99.1977 21.947C104.86 18.3636 111.522 21.6684 112.806 28.642C113.549 32.6761 111.936 37.0341 108.676 39.1566C97.9856 46.1149 87.2801 53.0456 76.5213 59.8702C73.1913 61.9824 69.7612 61.5939 66.7265 59.0054C63.6437 56.3775 62.6722 52.7527 63.3952 48.5337C64.2206 45.3221 66.1099 43.1749 68.6863 41.5685C72.9464 38.913 77.1371 36.1175 81.3573 33.3811Z" fill="#FABC05"/>
@@ -162,7 +165,7 @@ const Home = () => {
         
         {/* Black Navbar (60% width) */}
         <nav className="bg-black py-2 -mt-7 h-[100%] w-[60%] rounded-b-full cursor-pointer">
-          <div className="flex justify-center items-center pt-2 pb-1 space-x-14">
+          <div className="flex justify-center items-center pb-1 space-x-14">
             {/* Nav Links */}
             <ul className="flex space-x-16 text-lg font-semibold text-white">
               <li className="hover:underline hover:text-yellow-400">Home</li>
@@ -280,6 +283,7 @@ const Home = () => {
       </div>
     </div>
   </section>
+  </div>
   );
 };
 
